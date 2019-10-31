@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  techradar:
+    image: wwwthoughtworks/build-your-own-radar
+    ports:
+      - 8080:80
+    environment:
+      SERVER_NAMES: "localhost 127.0.0.1"
+    volumes:
+      - ./static:/opt/build-your-own-radar/static:ro
